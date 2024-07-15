@@ -31,6 +31,7 @@ const Home = () => {
 								return <div key={index} className="itemList"><div>{item}</div><i className="fas fa-times" onClick={e => removeItem(index)}></i></div>
 							}) 
 						}
+						{ list.length == 0 && <div className="itemList">No tasks, add a task</div>}
 				</div>
 				<div className='bottomList'>{list.length} item left</div>
 				<p className="p-3">
